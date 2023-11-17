@@ -4,8 +4,8 @@ let operator = 0;
 
 
 
-function add(num1, num2, operator) {
-
+function add(num1, num2) {
+    return num1 + num2;
 }
 
 function subtract() {
