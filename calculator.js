@@ -3,6 +3,10 @@ let num2 = 0;
 let operator = 0;
 
 function add() {
+
+}
+
+function subtract() {
     
 }
 
