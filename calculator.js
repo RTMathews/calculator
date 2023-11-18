@@ -4,11 +4,13 @@ let operator = 0;
 let screenDiv = document.querySelector('.screen');
 const buttonNine = document.getElementById('button9');
 
-function buttonNine()
+function printNine()
 {
     let screenDiv = document.querySelector('.screen');
-    screenDiv.textContent = '3';
+    screenDiv.textContent = '9';
 }
+
+
 
 function add(num1, num2) {
     return num1 + num2;
