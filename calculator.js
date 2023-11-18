@@ -27,5 +27,6 @@ function operate() {
 }
 
 buttonNine.addEventListener('click', () => {
-    const num9 = 9;
+    const num9 = document.createElement('num9')
+    num9.classList.add
 })
