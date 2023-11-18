@@ -27,5 +27,5 @@ function operate() {
 }
 
 buttonNine.addEventListener('click', () => {
-    
+    num1 = 9;
 })
