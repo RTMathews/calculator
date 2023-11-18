@@ -26,3 +26,6 @@ function operate() {
 
 }
 
+buttonNine.addEventListener('click', () => {
+    
+})
