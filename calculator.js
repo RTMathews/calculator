@@ -10,7 +10,7 @@ function printNine()
     screenDiv.textContent = '9';
 }
 
-
+buttonNine.addEventListener('click', printNine);
 
 function add(num1, num2) {
     return num1 + num2;
