@@ -4,7 +4,11 @@ let operator = 0;
 let screenDiv = document.querySelector('.screen');
 const buttonNine = document.getElementById('button9');
 
-
+function buttonNine()
+{
+    let screenDiv = document.querySelector('.screen');
+    screenDiv.textContent = '3';
+}
 
 function add(num1, num2) {
     return num1 + num2;
@@ -25,7 +29,3 @@ function divide() {
 function operate() {
 
 }
-
-buttonNine.addEventListener('click', () => {
-    
-})
