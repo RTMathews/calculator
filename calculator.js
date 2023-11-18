@@ -25,3 +25,7 @@ function divide() {
 function operate() {
 
 }
+
+buttonNine.addEventListener('click', () => {
+    const num9 = 9;
+})
