@@ -47,22 +47,19 @@ clear.addEventListener('click', function () {
 })
 
 function getAnswer() {
-    previous = Number(previous);
-    current = Number(current);
-
-    if (operators === '+') {
-        previous += current;
+    num1 = Number(num1);
+    num2 = Number(num2);
+    if (operator === '+') {
+        num2 += num1
     }
-    else if (operators === '-') {
-        previous -= current;
+    else if (operator === '-') {
+        num2 -= num1;
     }
-    else if (operators === '*') {
-        previous *= current;
+    else if (operator === '*') {
+        num2 *= num1;
     }
-    else if (operators === '/') {
-        previous /= current;
+    else if (operator === '/') {
+        num2 /= num1;
     }
-
-    previous = previous.toString();
-    current = previous.toString();
+    console.log(num2);
 }
