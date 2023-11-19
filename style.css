@@ -1,0 +1,16 @@
+button {
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.screen {
+    font-size: 4rem;
+    text-align: right;
+}
