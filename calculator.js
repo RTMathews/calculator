@@ -45,7 +45,9 @@ decimal.addEventListener('click', function() {
 })
 
 function addDecimal() {
-    
+    if (!num1.includes('.')) {
+        num1 += '.';
+    }
 }
 
 clear.addEventListener('click', function () {
