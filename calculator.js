@@ -7,6 +7,7 @@ let decimal = document.querySelector('.decimal');
 let equals = document.querySelector('.equals');
 
 let numbs = document.querySelectorAll('.number');
+let operators = document.querySelectorAll('.operator');
 let previous = document.querySelector('.previous');
 let current = document.querySelector('.input');
 
@@ -15,6 +16,16 @@ numbs.forEach((numb) => numb.addEventListener('click', function(e) {
     screenDiv.textContent = num1;
 }))
 
+operators.forEach((ops) => ops.addEventListener('click', function(e) {
+    getOperator(e.target.textContent);
+}))
+
 function getNumbers(n) {
+    if(num1.length <= 10) {
     num1 += n;
+    }
+}
+
+function getOperator(n) {
+    operator = n;
 }
