@@ -24,6 +24,8 @@ operators.forEach((ops) => ops.addEventListener('click', function(e) {
 
 equals.addEventListener('click', function() {
     getAnswer();
+    previous.textConent = '';
+    current.textContent = num2;
 })
 
 function getNumbers(n) {
@@ -41,6 +43,10 @@ function getOperator(n) {
 decimal.addEventListener('click', function() {
     addDecimal();
 })
+
+function addDecimal() {
+    
+}
 
 clear.addEventListener('click', function () {
     num1 = '';
@@ -65,5 +71,4 @@ function getAnswer() {
     else if (operator === '/') {
         num2 /= num1;
     }
-    console.log(num2);
 }
