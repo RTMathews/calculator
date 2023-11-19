@@ -28,4 +28,6 @@ function getNumbers(n) {
 
 function getOperator(n) {
     operator = n;
+    num2 = num1;
+    num1 = '';
 }
