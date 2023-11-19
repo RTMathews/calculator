@@ -22,12 +22,13 @@ button {
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .number {
     font-size: xx-large;
     width: 48px;
+    justify-content: space-between;
 }
 
 .operator {
@@ -43,4 +44,8 @@ button {
 .equals {
     font-size: xx-large;
     width: 48px;
+}
+
+.screen {
+    border-style: solid;
 }
