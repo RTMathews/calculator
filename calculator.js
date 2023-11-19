@@ -38,6 +38,10 @@ function getOperator(n) {
     num1 = '';
 }
 
+decimal.addEventListener('click', function() {
+    addDecimal();
+})
+
 clear.addEventListener('click', function () {
     num1 = '';
     num2 = '';
