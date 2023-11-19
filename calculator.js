@@ -11,8 +11,12 @@ let previous = document.querySelector('.previous');
 let current = document.querySelector('.input');
 
 numbs.forEach((numb) => numb.addEventListener('click', function(e) {
-    
+    getNumbers(e.target.textContent)
 }))
+
+function getNumbers(n) {
+    
+}
 
 function add(num1, num2) {
     return num1 + num2;
