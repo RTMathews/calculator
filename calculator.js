@@ -13,12 +13,18 @@ let current = document.querySelector('.input');
 
 numbs.forEach((numb) => numb.addEventListener('click', function(e) {
     getNumbers(e.target.textContent)
-    screenDiv.textContent = num1;
+    current.textContent = num1;
 }))
 
 operators.forEach((ops) => ops.addEventListener('click', function(e) {
     getOperator(e.target.textContent);
+    previous.textContent = num2 + ' ' + operator;
+    current.textContent = num1;
 }))
+
+equals.addEventListener('click', function() {
+    getAnswer();
+})
 
 function getNumbers(n) {
     if(num1.length <= 10) {
@@ -30,4 +36,33 @@ function getOperator(n) {
     operator = n;
     num2 = num1;
     num1 = '';
+}
+
+clear.addEventListener('click', function () {
+    num1 = '';
+    num2 = '';
+    operator = '';
+    current.textContent = '';
+    previous.textContent = '';
+})
+
+function getAnswer() {
+    previous = Number(previous);
+    current = Number(current);
+
+    if (operators === '+') {
+        previous += current;
+    }
+    else if (operators === '-') {
+        previous -= current;
+    }
+    else if (operators === '*') {
+        previous *= current;
+    }
+    else if (operators === '/') {
+        previous /= current;
+    }
+
+    previous = previous.toString();
+    current = previous.toString();
 }
