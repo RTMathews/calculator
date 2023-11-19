@@ -2,14 +2,17 @@ let num1 = 0;
 let num2 = 0;
 let operator = 0;
 let screenDiv = document.getElementById('screen');
+let clear = document.querySelector('#buttonclear')
+let divide = document.querySelector('#button/')
 let buttonNine = document.getElementById('button9');
 
-function printNumb(n)
-{
-    let screenDiv = document.getElementById('screen');
-}
+let numbs = document.querySelectorAll('.numbers');
+let previous = document.querySelector('.previous');
+let current = document.querySelector('.input');
 
-buttonNine.addEventListener('click', printNumb);
+numbs.forEach((numb) => numb.addEventListener('click', function(e) {
+    
+}))
 
 function add(num1, num2) {
     return num1 + num2;
