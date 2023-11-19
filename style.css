@@ -14,3 +14,33 @@ button {
     font-size: 4rem;
     text-align: right;
 }
+
+.final-row {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.number {
+    font-size: xx-large;
+    width: 48px;
+}
+
+.operator {
+    font-size: xx-large;
+    width: 48px;
+}
+
+.decimal {
+    font-size: xx-large;
+    width: 48px;
+}
+
+.equals {
+    font-size: xx-large;
+    width: 48px;
+}
